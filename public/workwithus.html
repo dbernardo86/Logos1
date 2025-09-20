@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Logos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="logo.png" alt="Logos Logo">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About us</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="workwithus.html">Work with Us</a>
+    </nav>
+    <main>
+        <h1>Work with Us</h1>
+        <p>We will be please to discuss with you the open positions available. you can send an email clikking below betton.</p>
+		<button type="button" id="sendEmailBtn">Send Email</button> 
+    </main>
+    <footer>
+        Logos Consulting Srl Unipersonale - Via R. Caprini 31, 1013 Gallarate (VA) Italy
+        <BR>
+        P.IVA: 04035030123 - EU VAT number: IT04035030123
+    </footer>
+</body>
+</html>
+
+<script>
+document.getElementById('sendEmailBtn').onclick = function() {
+  var mailto = "mailto:info@logos.cons.com"
+    + "?subject=" + encodeURIComponent("HR email sent from Logos web site");
+  window.location.href = mailto;
+};
+</script>
