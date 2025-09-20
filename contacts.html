@@ -16,8 +16,9 @@
     </nav>
     <main>
         <h1>Contact Us</h1>
-        <p>Email: info@logos-cons.com<br><br>Please contact us by email</p>
-    </main>
+		<p>Click the button below to contact us. Your email app will open with the recipient and subject pre-filled.</p>
+		<button type="button" id="sendEmailBtn">Send Email</button>   
+	</main>
     <footer>
         Logos Consulting Srl Unipersonale - Via R. Caprini 31, 1013 Gallarate (VA) Italy
         <BR>
@@ -25,3 +26,12 @@
     </footer>
 </body>
 </html>
+
+<script>
+document.getElementById('sendEmailBtn').onclick = function() {
+  var mailto = "mailto:info@logos.cons.com"
+    + "?subject=" + encodeURIComponent("Info email sent from Logos web site");
+  window.location.href = mailto;
+};
+</script>
+
